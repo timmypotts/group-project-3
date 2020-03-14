@@ -1,0 +1,69 @@
+// Core variables
+
+// Global
+@html-font-size: 10px;
+@html-line-height: 1.428571429;
+@body-bg: #fff;
+@body-font-color: #333;
+@body-font-size: 1.4rem;
+// Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+@base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+@fallback-font-family: "Helvetica Neue", sans-serif;
+@cjk-font-family: @base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", @fallback-font-family;
+@body-font-family: @base-font-family, @fallback-font-family;
+
+// Sizes
+@layout-gutter: 1rem;
+@control-min-width: 18rem;
+@border-radius: .2rem;
+
+// Colors
+@core-color: #5764c6;
+@core-secondary-color: lighten(@core-color, 40%);
+@core-dark-color: #333;
+@core-light-color: #fff;
+@core-meta-color: #888;
+@core-link-color: #5764c6;
+@core-border-color: #efefef;
+@core-empty-bg: #f8f8f8;
+@control-color: #c5c5c5;
+@control-color-success: #32b643;
+@control-color-info: #0193eb;
+@control-color-warning: #ffb700;
+@control-color-danger: #e85600;
+
+// Responsive breakpoints
+@size-xs: 480px;
+@size-sm: 600px;
+@size-md: 840px;
+@size-lg: 960px;
+@size-xl: 1280px;
+
+// Mixins
+.clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+.control-shadow() {
+  box-shadow: 0 0 .4rem fade(@core-color, 25%);
+}
+.control-transition() {
+  transition: all .15s ease;
+}
+.toast-variant(@color) {
+  background: fade(@color, 90%);
+  border-color: @color;
+}
+.label-base() {
+  border-radius: .2rem;
+  font-size: .95em;
+  padding: .1em .3em;
+  vertical-align: baseline;
+}
+.label-variant(@color) {
+  background: @color;
+  color: @core-light-color;
+}

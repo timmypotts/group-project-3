@@ -1,0 +1,9 @@
+{
+  "ownerName": "",
+  "businessName": "",
+  "businessAdress": "",
+  "foodSelections": ["Vegetables", "Fruits", "Meat & Poultry", "Grains, Beans, Nuts","Canned Food", "Fish & Seafood", "Dairy"],
+  "selectedFoods": ["Vegetables", "Fruits", "Dairy"],
+  "businessOptions": ["Sole Proprietorship", "Partnership", "Corporation", "LLC", "Nonprofit"],
+  "ownerBusinessOptionsSelection": ""
+}

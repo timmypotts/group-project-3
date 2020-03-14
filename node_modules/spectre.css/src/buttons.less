@@ -1,0 +1,161 @@
+// Buttons
+.btn {
+  -webkit-appearance: none;
+  background: #fff;
+  border: .1rem solid @core-color;
+  border-radius: @border-radius;
+  color: @core-link-color;
+  .control-transition();
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4rem;
+  height: 3.2rem;
+  line-height: 1.6rem;
+  outline: 0;
+  padding: .7rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:focus {
+    background: lighten(@core-secondary-color, 1%);
+    .control-shadow();
+  }
+  &:hover {
+    background: @core-color;
+    border-color: darken(@core-color, 5%);
+    color: @core-light-color;
+  }
+  &:active,
+  &.active {
+    background: darken(@core-color, 5%);
+    border-color: darken(@core-color, 10%);
+    color: @core-light-color;
+  }
+
+  // Button Primary
+  &.btn-primary {
+    background: @core-color;
+    border-color: darken(@core-color, 5%);
+    color: @core-light-color;
+    &:focus {
+      background: darken(@core-color, 4%);
+      border-color: darken(@core-color, 10%);
+      color: @core-light-color;
+    }
+    &:hover {
+      background: darken(@core-color, 6%);
+      border-color: darken(@core-color, 15%);
+      color: @core-light-color;
+    }
+    &:active,
+    &.active {
+      background: darken(@core-color, 8%);
+      border-color: darken(@core-color, 15%);
+      color: @core-light-color;
+    }
+    &.loading {
+      &::after {
+        border-color: @core-light-color;
+        border-right-color: transparent;
+        border-top-color: transparent;
+      }
+    }
+  }
+
+  // Button Link
+  &.btn-link {
+    background: transparent;
+    border-color: transparent;
+    color: @core-link-color;
+    &:focus,
+    &:hover {
+      color: darken(@core-link-color, 15%);
+    }
+    &:active,
+    &.active {
+      color: darken(@core-link-color, 25%);
+    }
+  }
+
+  // Button Small
+  &.btn-sm {
+    font-size: 1.2rem;
+    height: 2.4rem;
+    line-height: 1.4rem;
+    padding: .4rem .8rem;
+  }
+
+  // Button Large
+  &.btn-lg {
+    font-size: 1.8rem;
+    height: 4.2rem;
+    line-height: 2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  // Button Block
+  &.btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  // Button Clear
+  &.btn-clear {
+    background: transparent;
+    border: 0;
+    color: currentColor;
+    font-family: sans-serif;
+    height: 2rem;
+    line-height: 1.8rem;
+    margin-left: .2rem;
+    margin-right: -.4rem;
+    opacity: .45;
+    padding: 0 .4rem;
+    text-decoration: none;
+    width: 2rem;
+
+    &:hover {
+      opacity: .85;
+    }
+
+    &::before {
+      content: '\00d7';
+      font-size: 2rem;
+    }
+  }
+}
+
+// Button groups
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  .btn {
+    flex: 1 0 auto;
+    &:first-of-type:not(:last-of-type) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &:not(:first-of-type):not(:last-of-type) {
+      border-radius: 0;
+      margin-left: -.1rem;
+    }
+    &:last-of-type:not(:first-of-type) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      margin-left: -.1rem;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 9;
+    }
+  }
+
+  &.btn-group-block {
+    display: flex;
+  }
+}

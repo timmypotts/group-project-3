@@ -1,0 +1,19 @@
+// Labels
+.label {
+  background: @core-border-color;
+  color: lighten(@body-font-color, 20%);
+  .label-base();
+  white-space: nowrap;
+
+  &.label-primary {
+    .label-variant(@core-color);
+  }
+
+  &.label-success {
+    .label-variant(@control-color-success);
+  }
+
+  &.label-danger {
+    .label-variant(@control-color-danger);
+  }
+}

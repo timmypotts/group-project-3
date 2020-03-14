@@ -1,0 +1,32 @@
+{
+  "name": "mern",
+  "version": "0.1.0",
+  "description": "Mern Demo",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "firebase": "^7.9.3",
+    "google-maps-react": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-firebaseui": "^4.1.0",
+    "react-google-maps": "^9.4.5",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^2.1.1",
+    "reactstrap": "^8.4.1",
+    "styled-components": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

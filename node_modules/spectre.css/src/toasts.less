@@ -1,0 +1,33 @@
+// Toasts
+.toast {
+  border: .1rem solid @core-dark-color;
+  border-radius: @border-radius;
+  color: @core-light-color;
+  display: block;
+  padding: 1.4rem;
+  .toast-variant(@core-dark-color);
+  width: 100%;
+
+  &.toast-primary {
+    .toast-variant(@core-color);
+  }
+
+  &.toast-success {
+    .toast-variant(@control-color-success);
+  }
+
+  &.toast-danger {
+    .toast-variant(@control-color-danger);
+  }
+
+  a {
+    color: @core-light-color;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: .75;
+    }
+  }
+}
