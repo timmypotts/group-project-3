@@ -1,17 +1,18 @@
 {
   "development": {
     "username": "root",
-    "password": "a0E24me",
-    "database": "wasteDB",
-    "host": "127.0.0.1",
-    "port": 3306,
+    "password": "process.env.PASSWORD",
+    "database": "craigZoneDB",
+    "host": "localhost",
+    "port": "3306",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "a0E24me",
+    "database": "wasteDB",
     "host": "127.0.0.1",
+    "port": 3306,
     "dialect": "mysql"
   },
   "production": {
