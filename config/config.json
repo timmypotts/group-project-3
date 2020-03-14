@@ -2,7 +2,7 @@
   "development": {
     "username": "process.env.JAWSDB_USERNAME",
     "password": "process.env.PASSWORD",
-    "database": "wasteDB",
+    "database": "mlm00ecekabbnrxb",
     "host": "localhost",
     "port": "3306",
     "dialect": "mysql"
