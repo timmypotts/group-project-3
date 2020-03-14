@@ -10,7 +10,7 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
