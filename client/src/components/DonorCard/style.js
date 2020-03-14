@@ -22,13 +22,15 @@ export const DonorWrapper = styled.section`
   .card {
     border: ${props => (props.isSelected ? greenOutline : outline)};
   }
+
   .card-header {
-    background: ${props => (props.isSelected ? green : null)};
+    background: ${props => (props.isSelected ? green : green)};
     border-bottom: ${props => (props.isSelected ? greenOutline : outline)};
-    color: ${props => (props.isSelected ? "#fff" : null)};
+    color: ${props => (props.isSelected ? "#FFFFFF" : "#FFFFFF")};
     font-weight: 700;
   }
   .card-body {
     padding: 1.25rem 0.75rem;
+    color: ${"#FFFFFF"};
   }
 `;

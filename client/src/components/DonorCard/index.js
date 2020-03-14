@@ -6,7 +6,7 @@ import { DonorWrapper } from "./style";
 function DonorCard(props) {
   return (
     <Col>
-      <DonorWrapper isSelected={props.isSelected} onClick={props.selectDay}>
+      <DonorWrapper isSelected={props.isSelected} onClick={props.selectDonor}>
         <Card>
           <CardHeader>{props.businessName}</CardHeader>
           <CardBody>
