@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "process.env.JAWSDB_USERNAME",
-    "password": "process.env.PASSWORD",
-    "database": "mlm00ecekabbnrxb",
+    "username": "root",
+    "password": "root",
+    "database": "testDB",
     "host": "localhost",
     "port": "3306",
     "dialect": "mysql"
